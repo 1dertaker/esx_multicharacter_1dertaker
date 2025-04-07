@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Orbitron:wght@500&family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  color: rgb(24, 24, 24);
+  font-weight: 300;
+  font-size: 1.6vh;
+  font-family: 'Fustat';
+  transition: 0.1s ease;
+}
+
+html {
+  overflow: hidden;
+}
+
+p {
+  margin: 0 !important;
+}
+
+body {
+  background: radial-gradient(circle at 78%, #3333338c, #33333300 50%, #c9c9c9, #c4c4c4de 75%, #dfdfdf 90%);
+}
+
+@keyframes open {
+  from {
+    right: -300;
+    opacity: 0;
+  }
+
+  to {
+    right: 150;
+    opacity: 1;
+  }
+}
+
+
+
+.main-container {
+  position: absolute;
+  top: 50%;
+  right: 150;
+  transform: translate(0, -50%);
+  border-radius: 15px;
+  background: rgba(15, 15, 15, 0);
+  animation-name: open;
+  animation-duration: 0.4s;
+  animation-iteration-count: none;
+  width: fit-content !important;
+}
+
+.header {
+  font-family: 'Montserrat';
+  align-items: right;
+  text-align: right;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.767);
+  padding-bottom: 5px;
+  border-radius: 0;
+}
+
+.footer {
+  position: absolute;
+  font-size: 0rem;
+}
+
+
+.logo-mdp {
+  filter: invert(1) !important;
+  width: 215px;
+  height: 100px;
+  background-size: 149px !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+
+.character-box {
+  display: flex;
+  right: 0;
+  flex-direction: row;
+  border-radius: 0;
+  align-items: flex-end;
+  text-align: right;
+  height: 100%;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin-inline: 35px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+#info-text {
+  font-family: "Montserrat";
+  font-size: 22px;
+  padding-top: 1.3rem;
+  margin-right: 1.3rem;
+  display: block;
+  font-weight: lighter;
+}
+
+
+#character-info-name {
+  font-size: 35px;
+  color: rgba(255, 255, 255, 0.877);
+}
+
+#character-info-dateofbirth {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.589);
+}
+
+#select {
+  background-color: #00964ee8;
+  border: 0px !important;
+}
+
+#select:hover {
+  background-color: #008f11;
+  border: 0px !important;
+}
+
+#delete {
+  background-color: rgb(255, 22, 53);
+}
+
+#delete:hover {
+  background-color: rgba(220, 0, 29, 0.795);
+}
+
+
+
+.characters {
+  position: relative;
+  top: 30%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  height: fit-content;
+  justify-content: flex-end;
+  margin: 10px 35px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 1px 1px 77px -42px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 77px -42px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 77px -42px rgba(0, 0, 0, 0.75);
+  transition: 2s;
+}
+
+.charaters:active {
+  border: 1px solid #82ff90;
+}
+
+#charaters:focus {
+  border: 1px solid #82ff90;
+}
+
+.play {
+  position: relative;
+  top: 30%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  height: fit-content;
+  justify-content: flex-end;
+  margin: 10px 35px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 1px 1px 77px -42px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 77px -42px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 77px -42px rgba(0, 0, 0, 0.75);
+  transition: 2s;
+}
+
+#_characters {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+#option {
+}
+
+#option:hover {
+  transition: 1s;
+  transform: translateY(-3px);
+  -webkit-box-shadow: 1px 1px 65px 1px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 1px 1px 65px 1px rgba(0, 0, 0, 0.35);
+  box-shadow: 1px 1px 65px 1px rgba(0, 0, 0, 0.35);
+}
+
+#option:focus {
+  border: 1px solid #b2b2b2;
+}
+
+
+#optionname {
+  position: relative;
+  top: .7vw;
+  left: 35px;
+  font-size: 19px;
+  font-family: 'Fustat';
+  color: rgb(0, 0, 0);
+  height: fit-content !important;
+}
+
+#option:hover {}
+
+#playerjob {
+  position: relative;
+  top: .5vw;
+  left: 1.6vw;
+  font-size: 1vw;
+  color: rgb(0, 0, 0);
+}
+
+.material-symbols-outlined {
+  top: -0.1vw;
+  font-size: 3vw;
+  color: rgb(255, 255, 255);
+  position: relative;
+  vertical-align: middle;
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+#select-button {
+  position: relative;
+  display: none;
+  flex-direction: row;
+  color: black;
+}
+
+#select {
+  color: black;
+}
+
+#delete {
+  color: black;
+}
+
+#verified {
+  color: #0073ff !important;
+}
+
+#bank {
+  color: #3690ff !important;
+}
+
+#money {
+  color: #008f3c !important;
+}
+
+#account {
+  color: #2f2f2f !important;
+}
+
+#work {
+  color: #ffd000 !important;
+}
+
+.parraf {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #000 !important;
+  font-size: 15px;
+  margin-bottom: 10px !important;
+}
+
+.character-box-1 {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  height: fit-content;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 1;
+  margin: 10px 35px 35px 35px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 30px !important;
+  border: 0px;
+  -webkit-box-shadow: 1px 1px 77px -42px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 77px -42px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 77px -42px rgba(0, 0, 0, 0.75);
+}
+
+
+
+.font-18 {
+  font-size: 18px !important;
+  color: #000;
+  margin-right: 10px;
+  background: #e7e7e7;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.h3 {
+  font-size: 23px;
+  font-family: Fustat;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.character-preview img {
+  width: 100%;
+  height: auto;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: flex-start;
+  width: 25%;
+  height: fit-content;
+  position: absolute;
+  bottom: 0;
+}
+
+.text-perso {
+  font-family: Fustat;
+  font-size: 13px;
+}
